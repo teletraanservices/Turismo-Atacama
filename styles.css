@@ -43,3 +43,27 @@ body{font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased}
 .manifesto-photo{background-image:url('https://images.unsplash.com/photo-1710422355256-b720e951bb23?auto=format&fit=crop&w=1200&q=85')}
 @media(max-width:850px){.site-nav{font-size:12px;gap:18px}}
 @media(max-width:650px){.site-nav{font-size:14px}.hero h1{font-size:clamp(68px,16vw,94px)}.hero-copy{font-size:15px}.welcome h2,.section-top h2,.gallery h2{font-size:50px}.trip-info h3{font-size:27px}.trip-info>p{font-size:13px}.manifesto h2{font-size:58px}.faq h2{font-size:48px}.faq-list summary{font-size:13px}.faq-list details p{font-size:12px}.contact h2{font-size:58px}}
+
+/* Wayfinding controls: CTAs behave like trail markers instead of standard site buttons. */
+.site-nav .header-waypoint{display:flex;flex-direction:column;gap:3px;min-width:150px;padding:9px 0 9px 15px;border-left:1px solid var(--terra);font-size:12px;font-weight:700;line-height:1.35}
+.waypoint-coord{color:var(--terra);font-size:9px;letter-spacing:.14em}
+.header-waypoint b{padding-left:8px;color:var(--terra);font-size:15px;font-weight:500;transition:transform .2s}
+.header-waypoint:hover b{display:inline-block;transform:translate(3px,-2px)}
+.hero-actions{display:block;margin-top:28px}
+.hero-link{display:inline-block;padding-bottom:5px;border-bottom:1px solid rgba(255,255,255,.44);font-size:12px}
+.trail-button{position:absolute;right:max(44px,calc((100% - var(--width))/2));bottom:78px;z-index:2;min-height:76px;gap:15px;padding:12px 29px 12px 17px;clip-path:polygon(0 0,calc(100% - 17px) 0,100% 50%,calc(100% - 17px) 100%,0 100%);background:#f2e6d3;color:var(--ink);text-align:left}
+.trail-button:hover{background:#fff8eb}
+.trail-glyph{display:grid;width:38px;height:38px;flex:0 0 38px;place-items:center;border:1px solid #c88764;border-radius:50%;color:var(--terra);font-size:19px}
+.trail-button>span:nth-child(2),.whatsapp-waypoint>span:nth-child(2){display:flex;flex-direction:column;gap:3px;font-size:12px;font-weight:800;white-space:nowrap}
+.trail-button small,.whatsapp-waypoint small{font-size:9px;font-weight:500;letter-spacing:.02em;opacity:.76}
+.trail-button>b{margin-left:3px;color:var(--terra);font-size:19px;font-weight:500}
+.trip-bottom .route-link{display:inline-flex;align-items:center;gap:9px;font-size:11px;font-weight:700}
+.route-link span{display:grid;width:27px;height:27px;place-items:center;border:1px solid #c9b5a2;border-radius:50%;color:var(--terra);transition:background .2s,color .2s,transform .2s}
+.trip-bottom .route-link span{padding:0;color:var(--terra)}
+.route-link:hover span{transform:rotate(45deg);background:var(--terra);color:white}
+.whatsapp-waypoint{min-height:70px;gap:14px;padding:10px 21px 10px 12px;border:1px solid rgba(255,255,255,.58);background:transparent;color:#fff;text-align:left}
+.whatsapp-waypoint:hover{background:rgba(255,255,255,.12);color:white}
+.whatsapp-seal{display:grid;width:42px;height:42px;place-items:center;border:1px solid #e1bb95;border-radius:50%;color:#e1bb95;font-size:18px;transition:transform .25s}
+.whatsapp-waypoint:hover .whatsapp-seal{transform:rotate(45deg)}
+@media(max-width:850px){.site-nav .header-waypoint{min-width:130px}.trail-button{right:24px}}
+@media(max-width:650px){.site-nav .header-waypoint{min-width:0;padding:13px 0;border-left:0;border-bottom:1px solid var(--line)}.trail-button{right:20px;bottom:74px;min-height:68px;padding-block:9px}.trail-glyph{width:34px;height:34px;flex-basis:34px}.trail-button>span:nth-child(2){font-size:11px}.trail-button small{font-size:8px}.hero-actions{margin-top:22px}.hero-link{font-size:11px}.whatsapp-waypoint{max-width:calc(100vw - 44px)}}
