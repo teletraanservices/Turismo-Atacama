@@ -2,3 +2,44 @@
 @media(max-width:850px){.section-wrap,.site-header,.site-footer{width:min(var(--width),calc(100% - 48px))}.hero-content{width:min(var(--width),calc(100% - 48px))}.hero-caption{left:24px;right:24px}.site-nav{gap:18px}.welcome{gap:30px;padding-block:95px}.manifesto-content{padding:75px 42px 60px}.faq{gap:48px}.gallery-grid{height:300px;grid-template-columns:repeat(4,1fr)}.site-footer{flex-wrap:wrap;padding-block:25px}.site-footer>p{display:none}}
 @media(max-width:650px){.section-wrap,.site-header,.site-footer{width:calc(100% - 40px)}.site-header{height:72px}.brand-mark{width:35px;height:35px}.menu-toggle{display:flex;width:42px;height:40px;flex-direction:column;justify-content:center;gap:6px;padding:9px;border:1px solid var(--line);background:transparent}.menu-toggle span{display:block;width:100%;height:1px;background:var(--ink);transition:transform .2s}.menu-toggle[aria-expanded=true] span:first-child{transform:translateY(3.5px) rotate(45deg)}.menu-toggle[aria-expanded=true] span:last-child{transform:translateY(-3.5px) rotate(-45deg)}.site-nav{display:none;position:absolute;top:calc(100% - 1px);left:-20px;right:-20px;align-items:stretch;gap:0;padding:10px 20px 18px;background:var(--sand);border-bottom:1px solid var(--line)}.site-nav.is-open{display:flex;flex-direction:column}.site-nav>a:not(.button){padding:13px 0;border-bottom:1px solid var(--line)}.site-nav .button{margin-top:14px}.hero{height:calc(100svh - 72px);min-height:600px}.hero-image{background-position:57% center}.hero-shade{background:linear-gradient(90deg,rgba(24,31,30,.72),rgba(24,31,30,.2)),linear-gradient(0deg,rgba(20,24,23,.4),transparent 35%)}.hero-content{width:calc(100% - 40px);padding-top:120px}.hero h1{font-size:clamp(66px,16vw,92px)}.hero-copy{max-width:310px;font-size:13px}.hero-actions{align-items:flex-start;flex-direction:column;gap:18px}.hero-caption{left:20px;right:20px;bottom:23px;font-size:7px}.scroll-cue{display:none}.welcome{grid-template-columns:1fr;gap:13px;padding-block:79px 85px}.welcome-label{padding:0}.sun-symbol{display:inline-block;margin:0 10px 0 0;font-size:18px;vertical-align:middle}.welcome-label .eyebrow{display:inline-block;margin:0;vertical-align:middle}.welcome h2,.section-top h2,.gallery h2{font-size:46px}.experiences{padding-block:18px 85px}.section-top{align-items:start;flex-direction:column;gap:13px;margin-bottom:27px}.section-aside br{display:none}.trip-grid{grid-template-columns:1fr;gap:35px}.trip-card-tall{grid-row:auto}.trip-photo,.trip-card-tall .trip-photo{height:275px}.trip-info h3{font-size:24px}.trip-note{line-height:1.8}.manifesto{grid-template-columns:1fr}.manifesto-photo{min-height:320px}.manifesto-content{padding:60px 24px 56px}.manifesto h2{font-size:54px}.gallery{padding-block:85px}.gallery-grid{height:auto;grid-template-columns:1fr 1fr;gap:9px}.gallery-item{min-height:205px;padding:12px}.gallery-one,.gallery-four{min-height:250px}.testimonial{padding:75px 23px}.testimonial blockquote{font-size:25px}.faq{grid-template-columns:1fr;gap:37px;padding-block:85px}.faq h2{font-size:46px}.faq-list summary{font-size:11px}.contact{min-height:520px}.contact h2{font-size:55px}.site-footer{min-height:0;display:grid;grid-template-columns:1fr auto;gap:22px;padding-block:26px}.footer-links{grid-column:1/-1;grid-row:2;gap:15px}.copyright{justify-self:end;font-size:8px}.site-footer .brand-name{font-size:13px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* Dirección editorial: una serif expresiva para el paisaje y una sans cálida para leer. */
+:root{font-family:"Manrope",sans-serif;--serif:"Fraunces",Georgia,serif;--sand:#f7f3eb;--ink:#242820;--muted:#686a61;--terra:#ad5d3e;--night:#172a32;--line:#ddd6c9;background:var(--sand);color:var(--ink)}
+body{font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.site-nav{font-size:13px;font-weight:600;gap:34px}
+.brand-name{font-size:16px;letter-spacing:-.04em}
+.hero h1{font-size:clamp(72px,8.3vw,116px);line-height:.92;letter-spacing:-.06em;font-weight:500}
+.hero-copy{font-size:16px;line-height:1.75}
+.hero-link,.button{font-size:13px}
+.eyebrow{font-size:11px;letter-spacing:.16em}
+.welcome-copy>p,.gallery-heading>p:last-child,.faq-intro>p:not(.eyebrow){font-size:15px;line-height:1.85}
+.welcome h2,.section-top h2,.gallery h2,.faq h2{font-size:clamp(48px,5.2vw,68px);letter-spacing:-.055em}
+.section-aside{font-size:13px}
+.trip-meta{font-size:10px;letter-spacing:.1em}
+.trip-info h3{font-size:29px;letter-spacing:-.035em}
+.trip-info>p{font-size:13px;line-height:1.8}
+.trip-bottom{font-size:11px}
+.trip-note{font-size:12px}
+.manifesto h2{font-size:clamp(54px,5.6vw,74px);letter-spacing:-.055em}
+.manifesto-content>p:not(.eyebrow){font-size:14px;line-height:1.85}
+.values p{font-size:12px}.values strong{font-size:14px}.values>div>span{font-size:11px}
+.gallery-item span{font-size:11px}
+.testimonial blockquote{font-size:clamp(28px,3.3vw,40px);letter-spacing:-.025em}
+.quote-byline{font-size:11px}
+.faq-list summary{font-size:14px;padding:21px 0}
+.faq-list details p{font-size:13px;line-height:1.8}
+.contact h2{font-size:clamp(58px,6.8vw,84px);letter-spacing:-.055em}
+.contact-content>p:not(.eyebrow){font-size:15px;line-height:1.85}
+.contact-content small{font-size:11px}
+.site-footer>p,.copyright,.footer-links{font-size:11px}
+.photo-moon{background-image:url('https://images.unsplash.com/photo-1585951588669-419e798040e8?auto=format&fit=crop&w=1100&q=85')}
+.photo-lagoon{background-image:url('https://images.unsplash.com/photo-1710422355256-b720e951bb23?auto=format&fit=crop&w=1000&q=85')}
+.photo-stars{background-image:url('https://images.unsplash.com/photo-1516054719048-38394ee6cf3e?auto=format&fit=crop&w=1000&q=85')}
+.photo-salar{background-image:url('https://images.unsplash.com/photo-1710422355256-b720e951bb23?auto=format&fit=crop&w=1000&q=85')}
+.gallery-one{background-image:url('https://images.unsplash.com/photo-1585951588669-419e798040e8?auto=format&fit=crop&w=800&q=80')}
+.gallery-two,.gallery-three{background-image:url('https://images.unsplash.com/photo-1710422355256-b720e951bb23?auto=format&fit=crop&w=800&q=80')}
+.gallery-four{background-image:url('https://images.unsplash.com/photo-1516054719048-38394ee6cf3e?auto=format&fit=crop&w=800&q=80')}
+.hero-image,.contact-image{background-image:url('https://images.unsplash.com/photo-1585951588669-419e798040e8?auto=format&fit=crop&w=2200&q=85')}
+.manifesto-photo{background-image:url('https://images.unsplash.com/photo-1710422355256-b720e951bb23?auto=format&fit=crop&w=1200&q=85')}
+@media(max-width:850px){.site-nav{font-size:12px;gap:18px}}
+@media(max-width:650px){.site-nav{font-size:14px}.hero h1{font-size:clamp(68px,16vw,94px)}.hero-copy{font-size:15px}.welcome h2,.section-top h2,.gallery h2{font-size:50px}.trip-info h3{font-size:27px}.trip-info>p{font-size:13px}.manifesto h2{font-size:58px}.faq h2{font-size:48px}.faq-list summary{font-size:13px}.faq-list details p{font-size:12px}.contact h2{font-size:58px}}
